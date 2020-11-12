@@ -1,0 +1,8 @@
+certo
+mas na classe Target, super class de Python2Target, há dois atributos finals
+não inicializados
+é um cenário que não pensamos
+então eu diria para rodar as transformações, e depois remover o construtor vazio manualmente
+E deixar isso registrado.
+
+quando a classe pai tem atributos finals e nao tem default construtor, adicionar construtor vazio quebra execucao

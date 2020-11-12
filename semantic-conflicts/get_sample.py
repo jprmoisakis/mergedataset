@@ -18,7 +18,7 @@ def fetchJars():
             values = parsedOutput[key].split(",")
             commitSHA = values[1]
             new_output += get_version_for_commit(merge_scenarios_directory, commitSHA, "original", values)
-            new_output += get_version_for_commit(merge_scenarios_directory, commitSHA, "transformed", values)
+            new_output += get_version_for_commit(merge_scenarios_directory, commitSHA, "transformed2.0", values)
         except Exception as e:
             print(key)
             print(e)

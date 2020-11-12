@@ -1,0 +1,21 @@
+            <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+    <configuration> 
+    <archive> 
+    <manifest> 
+        <mainClass>fully.qualified.MainClass</mainClass> 
+    </manifest> 
+    </archive> 
+    <descriptorRefs> 
+        <descriptorRef>jar-with-dependencies</descriptorRef> 
+    </descriptorRefs> 
+    </configuration> 
+</plugin> 
+
+
+mvn clean compile assembly:single
+
+git log --pretty=%P -n 1 1bca94af9ec625f21d1b58ff10efb5be71ab87a6
+
+git merge-base da5c02683d4d30710e315021892243ca0c266482 b4510a50c001d32fd1496ff45ba881b1825f2460
+9eb405e5b81082044daca981b2655396c4e9a6eb
